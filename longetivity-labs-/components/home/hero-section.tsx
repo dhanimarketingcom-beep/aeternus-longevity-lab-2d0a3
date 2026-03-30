@@ -7,16 +7,6 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/ui/animated-section";
 
-function getImageDimensions(src: string): { width: number; height: number } {
-  try {
-    const sharp = require('sharp');
-    const metadata = sharp(src).metadata();
-    return { width: metadata.width || 1920, height: metadata.height || 1080 };
-  } catch {
-    return { width: 1920, height: 1080 };
-  }
-}
-
 const heroImages = [
   "/hero-longevity-outdoor.png",
   "/personal-training-session-coach-gym.jpg",
@@ -44,7 +34,6 @@ export function HeroSection() {
     <section className="page-shell relative min-h-screen overflow-hidden">
       <div className="absolute inset-0">
         {heroImages.map((image, index) => {
-          const dims = getImageDimensions(image);
           return (
             <div
               key={image}
@@ -58,7 +47,7 @@ export function HeroSection() {
                 priority={index === 0}
                 className="object-cover"
                 quality={90}
-                sizes={`${dims.width}px`}
+                            sizes="100vw"
               />
             </div>
           );
