@@ -49,17 +49,33 @@ export function Header() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="relative z-[60] flex items-center rounded-full bg-primary px-3 py-2 shadow-[0_14px_32px_rgba(8,38,41,0.28)] transition-transform duration-300 hover:scale-[1.02]"
+            className={cn(
+              "relative z-[60] flex items-center transition-all duration-300 hover:scale-[1.02]",
+              solidHeader
+                ? "rounded-2xl overflow-hidden shadow-[0_14px_32px_rgba(8,38,41,0.28)]"
+                : "rounded-full bg-primary px-3 py-2 shadow-[0_14px_32px_rgba(8,38,41,0.28)]",
+            )}
             onClick={closeMenu}
           >
-            <Image
-              src="/images/etre-20tarso.png"
-              alt="AETERNUS Longevity Lab"
-              width={180}
-              height={60}
-              className="h-14 w-auto sm:h-16"
-              priority
-            />
+            {solidHeader ? (
+              <Image
+                src="/images/logo-full.jpg"
+                alt="AETERNUS Longevity Lab"
+                width={200}
+                height={200}
+                className="h-14 w-auto sm:h-16"
+                priority
+              />
+            ) : (
+              <Image
+                src="/images/logo-transparent.png"
+                alt="AETERNUS Longevity Lab"
+                width={200}
+                height={200}
+                className="h-14 w-auto sm:h-16"
+                priority
+              />
+            )}
           </Link>
 
           <div className="hidden items-center gap-1 rounded-full border border-white/12 bg-secondary/45 px-2 py-2 backdrop-blur-sm lg:flex">
