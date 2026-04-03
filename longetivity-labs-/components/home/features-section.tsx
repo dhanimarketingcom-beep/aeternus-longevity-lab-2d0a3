@@ -121,23 +121,14 @@ export function FeaturesSection() {
                   ))}
                 </div>
               </div>
-
-              <div className="rounded-[1.5rem] border border-border bg-white p-6 shadow-[0_20px_50px_rgba(8,38,41,0.08)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent-secondary">
-                  Our One of a Kind Offering
-                </p>
-                <h3 className="mt-2 text-2xl font-semibold text-secondary">
-                  Introducing Holistic Fitness for ages 30+
-                </h3>
-                <div className="mt-4">
-                  <Image
-                    src="/one%20of%20a%20kind%20offering.png"
-                    alt="Our one of a kind offering - Mind Body Heart holistic fitness"
-                    width={1600}
-                    height={900}
-                    className="h-auto w-full rounded-[1rem] object-contain"
-                  />
-                </div>
+              <div className="rounded-[1.5rem] border border-border bg-white p-4 shadow-[0_20px_50px_rgba(8,38,41,0.08)]">
+                <Image
+                  src="/program-description.png"
+                  alt="Program structure and session format"
+                  width={1843}
+                  height={1057}
+                  className="h-auto w-full rounded-[1rem] object-contain"
+                />
               </div>
             </div>
           </div>
