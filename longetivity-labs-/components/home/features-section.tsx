@@ -48,7 +48,6 @@ export function FeaturesSection() {
                       </span>
                     </div>
                   </div>
-
                   <div className="flex flex-col p-5 sm:p-6">
                     <div className="flex items-start justify-between gap-3">
                       <div>
@@ -60,11 +59,9 @@ export function FeaturesSection() {
                         </h3>
                       </div>
                     </div>
-
                     <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">
                       {program.description}
                     </p>
-
                     <div className="mt-4 grid gap-2 text-sm text-secondary/82">
                       <div className="flex items-start justify-between gap-4 rounded-2xl bg-muted/55 px-4 py-3">
                         <span className="font-semibold">Format</span>
@@ -75,7 +72,6 @@ export function FeaturesSection() {
                         <span className="text-right">{program.locations}</span>
                       </div>
                     </div>
-
                     <ul className="mt-5 grid gap-2 text-sm text-muted-foreground">
                       {program.features.map((feature) => (
                         <li
@@ -126,14 +122,35 @@ export function FeaturesSection() {
                 </div>
               </div>
 
-              <div className="rounded-[1.5rem] border border-border bg-white p-4 shadow-[0_20px_50px_rgba(8,38,41,0.08)]">
-                <Image
-                  src="/program-description.png"
-                  alt="Program structure and session format"
-                  width={1843}
-                  height={1057}
-                  className="h-auto w-full rounded-[1rem] object-contain"
-                />
+              <div className="rounded-[1.5rem] border border-border bg-white p-6 shadow-[0_20px_50px_rgba(8,38,41,0.08)]">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent-secondary">
+                  Our One of a Kind Offering
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-secondary">
+                  Introducing Holistic Fitness for ages 40+
+                </h3>
+                <ul className="mt-5 grid gap-3">
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>A structured fitness program specially designed for the needs &amp; interests of three key age groups above 40</span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Activates the healthy trifecta <strong className="text-secondary font-semibold">MIND / BODY / HEART</strong> to give each individual a holistic fitness experience in <strong className="text-secondary font-semibold">just 1 hour</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Uniquely combines the best of <strong className="text-secondary font-semibold">Traditional</strong> &amp; <strong className="text-secondary font-semibold">Modern Day</strong> techniques</span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Incorporates a variety of <strong className="text-secondary font-semibold">equipment</strong> and <strong className="text-secondary font-semibold">training formats</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Each session allows individuals to push themselves while having <strong className="text-secondary font-semibold">FUN!!</strong></span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
