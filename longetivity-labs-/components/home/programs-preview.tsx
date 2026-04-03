@@ -28,8 +28,7 @@ export function ProgramsPreview() {
                   className="rounded-full bg-accent px-6 font-semibold text-accent-foreground hover:bg-accent/90"
                 >
                   <Link href="/programs">
-                    See Program Details
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    See Program Details <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button
@@ -47,8 +46,8 @@ export function ProgramsPreview() {
             <div className="flow-card overflow-hidden p-4 sm:p-5">
               <div className="rounded-[1.4rem] bg-white p-3 sm:p-4">
                 <Image
-                  src="/program-diagram-mind-body-heart.png"
-                  alt="AETERNUS session diagram"
+                  src="/one%20of%20a%20kind%20offering.png"
+                  alt="Our one of a kind offering - Mind Body Heart holistic fitness"
                   width={1868}
                   height={1053}
                   className="h-auto w-full rounded-[1rem] object-contain"
