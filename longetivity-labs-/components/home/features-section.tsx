@@ -127,17 +127,30 @@ export function FeaturesSection() {
                   Our One of a Kind Offering
                 </p>
                 <h3 className="mt-2 text-2xl font-semibold text-secondary">
-                  Introducing Holistic Fitness for ages 30+
+                  Introducing Holistic Fitness for ages 40+
                 </h3>
-                <div className="mt-4">
-                  <Image
-                    src="/one%20of%20a%20kind%20offering.png"
-                    alt="Our one of a kind offering - Mind Body Heart holistic fitness"
-                    width={1600}
-                    height={900}
-                    className="h-auto w-full rounded-[1rem] object-contain"
-                  />
-                </div>
+                <ul className="mt-5 grid gap-3">
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>A structured fitness program specially designed for the needs &amp; interests of three key age groups above 40</span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Activates the healthy trifecta <strong className="text-secondary font-semibold">MIND / BODY / HEART</strong> to give each individual a holistic fitness experience in <strong className="text-secondary font-semibold">just 1 hour</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Uniquely combines the best of <strong className="text-secondary font-semibold">Traditional</strong> &amp; <strong className="text-secondary font-semibold">Modern Day</strong> techniques</span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Incorporates a variety of <strong className="text-secondary font-semibold">equipment</strong> and <strong className="text-secondary font-semibold">training formats</strong></span>
+                  </li>
+                  <li className="flex items-start gap-3 rounded-[1.2rem] border border-border/80 bg-muted/30 px-4 py-3 text-sm leading-7 text-muted-foreground">
+                    <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-accent-secondary" />
+                    <span>Each session allows individuals to push themselves while having <strong className="text-secondary font-semibold">FUN!!</strong></span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
