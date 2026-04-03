@@ -83,7 +83,8 @@
 }
 
 @theme inline {
-    --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+    --font-sans: "Poppins", "Segoe UI", "Helvetica Neue", sans-serif;
+    --font-heading: "Arkhip", "Avenir Next", sans-serif;
     --font-serif:
         "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
     --font-mono: "Geist Mono", "Geist Mono Fallback", monospace;
@@ -153,6 +154,10 @@
     }
 
     /* Improved typography scaling for responsiveness */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-heading);
+    }
+
     h1 {
         @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
     }
