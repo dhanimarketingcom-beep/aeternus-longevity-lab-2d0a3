@@ -44,14 +44,22 @@ export function ProgramsPreview() {
 
           <AnimatedSection animation="fade-left" delay={140}>
             <div className="flow-card overflow-hidden p-4 sm:p-5">
-              <div className="rounded-[1.4rem] bg-white p-3 sm:p-4">
-                <Image
-                  src="/one%20of%20a%20kind%20offering.png"
-                  alt="Our one of a kind offering - Mind Body Heart holistic fitness"
-                  width={1868}
-                  height={1053}
-                  className="h-auto w-full rounded-[1rem] object-contain"
-                />
+              <div className="rounded-[1.4rem] bg-white p-4 sm:p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent-secondary">
+                  Our One of a Kind Offering
+                </p>
+                <h3 className="mt-2 text-xl font-semibold text-secondary">
+                  Introducing Holistic Fitness for ages 30+
+                </h3>
+                <div className="mt-3">
+                  <Image
+                    src="/one%20of%20a%20kind%20offering.png"
+                    alt="Our one of a kind offering - Mind Body Heart holistic fitness"
+                    width={1868}
+                    height={1053}
+                    className="h-auto w-full rounded-[1rem] object-contain"
+                  />
+                </div>
               </div>
             </div>
           </AnimatedSection>
