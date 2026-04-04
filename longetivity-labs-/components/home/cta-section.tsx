@@ -31,7 +31,7 @@ export function CTASection() {
                   size="lg"
                   className="rounded-full bg-accent px-10 py-6 text-lg font-bold text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20"
                 >
-                  <Link href="/contact">
+                  <Link href="https://aeternuslongevitylab.trafft.com/" target="_blank" rel="noopener noreferrer">
                     Book Free Trial
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
