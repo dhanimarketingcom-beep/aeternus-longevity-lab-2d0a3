@@ -28,9 +28,7 @@ export function Header() {
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
+    return () => { document.body.style.overflow = ""; };
   }, [mobileMenuOpen]);
 
   const closeMenu = () => setMobileMenuOpen(false);
@@ -110,7 +108,7 @@ export function Header() {
               asChild
               className="rounded-full bg-accent px-6 text-sm font-semibold text-accent-foreground hover:bg-accent/90"
             >
-              <Link href="/contact">Book Free Trial</Link>
+              <Link href="https://aeternuslongevitylab.trafft.com/" target="_blank" rel="noopener noreferrer">Book Free Trial</Link>
             </Button>
           </div>
 
@@ -129,7 +127,9 @@ export function Header() {
       <div
         className={cn(
           "fixed inset-0 z-40 bg-[rgba(8,38,41,0.74)] backdrop-blur-md transition-opacity duration-300 lg:hidden",
-          mobileMenuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
+          mobileMenuOpen
+            ? "pointer-events-auto opacity-100"
+            : "pointer-events-none opacity-0",
         )}
       >
         <div
@@ -155,22 +155,18 @@ export function Header() {
               </Link>
             ))}
           </div>
-
           <div className="rounded-[1.5rem] border border-white/10 bg-white/6 p-4">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
               Contact
             </p>
-            <a
-              href={sitePhoneHref}
-              className="mt-3 block text-lg font-semibold text-white"
-            >
+            <a href={sitePhoneHref} className="mt-3 block text-lg font-semibold text-white">
               {sitePhoneDisplay}
             </a>
             <Button
               asChild
               className="mt-4 w-full rounded-full bg-accent font-semibold text-accent-foreground hover:bg-accent/90"
             >
-              <Link href="/contact" onClick={closeMenu}>
+              <Link href="https://aeternuslongevitylab.trafft.com/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
                 Book Free Trial
               </Link>
             </Button>
