@@ -109,7 +109,7 @@ export default function AboutPage() {
                     variant="outline"
                     className="rounded-full border-white/20 bg-white/8 text-white hover:bg-white/12 hover:text-white"
                   >
-                    <Link href="/contact">Book Free Trial</Link>
+                    <Link href="https://aeternuslongevitylab.trafft.com/" target="_blank" rel="noopener noreferrer">Book Free Trial</Link>
                   </Button>
                 </div>
               </div>
