@@ -26,7 +26,6 @@ export function HeroSection() {
     const interval = window.setInterval(() => {
       setCurrentImage((value) => (value + 1) % heroImages.length);
     }, 5200);
-
     return () => window.clearInterval(interval);
   }, []);
 
@@ -47,38 +46,30 @@ export function HeroSection() {
                 priority={index === 0}
                 className="object-cover"
                 quality={90}
-                            sizes="100vw"
+                sizes="100vw"
               />
             </div>
           );
         })}
       </div>
-
       <div className="absolute inset-0 bg-[linear-gradient(125deg,rgba(8,38,41,0.92),rgba(15,95,88,0.7),rgba(8,38,41,0.5))]" />
       <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[radial-gradient(circle_at_top,rgba(130,213,208,0.22),transparent_60%)] lg:block" />
-
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-4 pb-16 pt-30 sm:px-6 sm:pt-32 lg:px-8 lg:pb-20 lg:pt-36">
         <div className="grid w-full gap-8 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-end">
           <div className="max-w-3xl">
             <AnimatedSection animation="fade-up">
               <span className="eyebrow">AETERNUS Longevity Lab</span>
             </AnimatedSection>
-
             <AnimatedSection animation="fade-up" delay={120}>
               <h1 className="mt-6 max-w-4xl font-serif text-white">
-                Train for life with strength, mobility, and recovery working
-                together.
+                Train for life with strength, mobility, and recovery working together.
               </h1>
             </AnimatedSection>
-
             <AnimatedSection animation="fade-up" delay={220}>
               <p className="mt-5 max-w-2xl text-base leading-8 text-white/82 sm:text-lg">
-                We offer 1-on-1 personal training and small group sessions for
-                adults 40+. Every 60-minute session is designed around how you
-                move now and how you want to keep moving in the years ahead.
+                We offer 1-on-1 personal training and small group sessions for adults 40+. Every 60-minute session is designed around how you move now and how you want to keep moving in the years ahead.
               </p>
             </AnimatedSection>
-
             <AnimatedSection animation="fade-up" delay={320}>
               <div className="mt-6 flex flex-wrap gap-3">
                 {heroPoints.map((point) => (
@@ -88,7 +79,6 @@ export function HeroSection() {
                 ))}
               </div>
             </AnimatedSection>
-
             <AnimatedSection animation="fade-up" delay={420}>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button
@@ -96,9 +86,8 @@ export function HeroSection() {
                   size="lg"
                   className="h-auto rounded-full bg-accent px-8 py-5 text-base font-semibold text-accent-foreground hover:bg-accent/92 sm:text-lg"
                 >
-                  <Link href="/contact">
-                    Book Your Free Trial
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <Link href="https://aeternuslongevitylab.trafft.com/" target="_blank" rel="noopener noreferrer">
+                    Book Free Trial <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button
@@ -112,8 +101,11 @@ export function HeroSection() {
               </div>
             </AnimatedSection>
           </div>
-
-          <AnimatedSection animation="fade-left" delay={260} className="lg:justify-self-end">
+          <AnimatedSection
+            animation="fade-left"
+            delay={260}
+            className="lg:justify-self-end"
+          >
             <div className="tint-panel rounded-[2rem] p-5 sm:p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">
                 Built into every session
