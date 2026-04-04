@@ -314,7 +314,7 @@ export default function ProgramsPage() {
                   size="lg"
                   className="rounded-full bg-accent px-10 py-6 text-lg font-bold text-accent-foreground hover:bg-accent/90"
                 >
-                  <Link href="/contact">
+                  <Link href="https://aeternuslongevitylab.trafft.com/" target="_blank" rel="noopener noreferrer">
                     Book Free Trial
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
