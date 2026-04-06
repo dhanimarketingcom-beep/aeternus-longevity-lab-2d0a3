@@ -192,7 +192,7 @@ export default function ProgramsPage() {
 
       <section className="section-padding relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+          <div>
             <AnimatedSection animation="fade-right">
               <div className="soft-panel p-5 sm:p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent-secondary">
@@ -218,37 +218,9 @@ export default function ProgramsPage() {
                 </div>
               </div>
             </AnimatedSection>
-
-            <AnimatedSection animation="fade-left" delay={120}>
-              <div className="flow-card overflow-hidden p-4 sm:p-5">
-                <div className="rounded-[1.5rem] bg-white p-3 sm:p-4">
-                  <Image
-                    src="/program-description.png"
-                    alt="AETERNUS session format"
-                    width={1843}
-                    height={1057}
-                    className="h-auto w-full rounded-[1rem] object-contain"
-                  />
-                </div>
-              </div>
-            </AnimatedSection>
           </div>
 
-          <div className="mt-6 grid gap-6 lg:grid-cols-[1.02fr_0.98fr] lg:items-start">
-            <AnimatedSection animation="fade-right" delay={160}>
-              <div className="flow-card overflow-hidden p-4 sm:p-5">
-                <div className="rounded-[1.5rem] bg-white p-3 sm:p-4">
-                  <Image
-                    src="/program-diagram-mind-body-heart.png"
-                    alt="AETERNUS integrated mind body heart diagram"
-                    width={1868}
-                    height={1053}
-                    className="h-auto w-full rounded-[1rem] object-contain"
-                  />
-                </div>
-              </div>
-            </AnimatedSection>
-
+          <div className="mt-6">
             <AnimatedSection animation="fade-left" delay={220}>
               <div className="tint-panel rounded-[1.9rem] p-5 sm:p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
@@ -280,18 +252,6 @@ export default function ProgramsPage() {
               </div>
             </AnimatedSection>
           </div>
-
-          <AnimatedSection animation="fade-up" delay={280} className="mt-6">
-            <div className="soft-panel overflow-hidden p-4 sm:p-5">
-              <Image
-                src="/onboarding-process.png"
-                alt="Onboarding process"
-                width={1379}
-                height={756}
-                className="h-auto w-full rounded-[1.2rem] object-contain"
-              />
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
